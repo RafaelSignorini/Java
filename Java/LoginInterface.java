@@ -8,17 +8,16 @@ public class LoginInterface {
         int count = 0;
 
         while (true) {
-            System.out.println("Enter your account name (or type 'new' to create a new account): ");
+            System.out.print("Enter your account name (or type 'new' to create a new account): ");
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("new")) {
                 if (count < accounts.length) {
-                    System.out.println("Enter your new account name: ");
+                    System.out.print("Enter your account name: ");
                     accounts[count] = scanner.nextLine();
-                    System.out.printf("New account '%s' has been added.%n", accounts[count]);
-                    count ++;
+                    count++;
                 } else {
-                    System.out.println("Account limit reached. Cannot create more accounts.");
+                    System.out.println("Account limit reached. Cannot add more accounts.");
                 }
             } else {
                 boolean found = false;
@@ -30,11 +29,11 @@ public class LoginInterface {
                     }
                 }
                 if (!found) {
-                    System.out.println("Account not found. Please try again or create a new accoutn.");
+                    System.out.println("Account not found. Please try again or create a new account.");
                 }
             }
-                
-            System.out.print("Would you like to continue? [yes/no]: ");
+
+            System.out.print("Would you like to continue? (yes/no): ");
             String continueInput = scanner.nextLine();
             if (continueInput.equalsIgnoreCase("no")) {
                 break;
@@ -47,5 +46,5 @@ public class LoginInterface {
         }
 
         scanner.close();
-    } 
+    }
 }
