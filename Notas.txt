@@ -1,21 +1,69 @@
 Objects
 
-Real-world objects contain [state] and [behavior].
-A software object's state is stored in [fields].
-A software object's behavior is exposed through [methods].
-Hiding internal data from the outside world, and accessing it only through publicly exposed methods is known as data [encapsulation].
-A blueprint for a software object is called a [class].
-Common behavior can be defined in a [superclass] and inherited into a [subclass] using the [extends] keyword.
-A collection of methods with no implementation is called an [interface].
-A namespace that organizes classes and interfaces by functionality is called a [package].
-The term API stands for [Application Programming Interface].
+    Real-world objects contain [state] and [behavior].
+    A software object's state is stored in [fields].
+    A software object's behavior is exposed through [methods].
+    Hiding internal data from the outside world, and accessing it only through publicly exposed methods is known as data [encapsulation].
+    A blueprint for a software object is called a [class].
+    Common behavior can be defined in a [superclass] and inherited into a [subclass] using the [extends] keyword.
+    A collection of methods with no implementation is called an [interface].
+    A namespace that organizes classes and interfaces by functionality is called a [package].
+    The term API stands for [Application Programming Interface].
 
 Variables
 
-The term "instance variable" is another name for [non-static field].
-The term "class variable" is another name for [static field].
-A local variable stores temporary state; it is declared inside a [method].
-A variable declared within the opening and closing parenthesis of a method is called a [parameter].
-What are the eight primitive data types supported by the Java programming language? [byte, short, int, long, float, double, boolean, char]
-Character strings are represented by the class [java.lang.String].
-An [array] is a container object that holds a fixed number of values of a single type.
+    The term "instance variable" is another name for [non-static field].
+    The term "class variable" is another name for [static field].
+    A local variable stores temporary state; it is declared inside a [method].
+    A variable declared within the opening and closing parenthesis of a method is called a [parameter].
+    What are the eight primitive data types supported by the Java programming language? [byte, short, int, long, float, double, boolean, char]
+    Character strings are represented by the class [java.lang.String].
+    An [array] is a container object that holds a fixed number of values of a single type.
+
+Operators
+
+    Simple Assignment Operator
+    =       Simple assignment operator
+    Arithmetic Operators
+    +       Additive operator (also used
+            for String concatenation)
+    -       Subtraction operator
+    *       Multiplication operator
+    /       Division operator
+    %       Remainder operator
+    Unary Operators
+    +       Unary plus operator; indicates
+            positive value (numbers are 
+            positive without this, however)
+    -       Unary minus operator; negates
+            an expression
+    ++      Increment operator; increments
+            a value by 1
+    --      Decrement operator; decrements
+            a value by 1
+    !       Logical complement operator;
+            inverts the value of a boolean
+    Equality and Relational Operators
+    ==      Equal to
+    !=      Not equal to
+    >       Greater than
+    >=      Greater than or equal to
+    <       Less than
+    <=      Less than or equal to
+    Conditional Operators
+    &&      Conditional-AND
+    ||      Conditional-OR
+    ?:      Ternary (shorthand for 
+            if-then-else statement)
+    Type Comparison Operator
+    instanceof      Compares an object to 
+                    a specified type 
+    Bitwise and Bit Shift Operators
+    ~       Unary bitwise complement
+    <<      Signed left shift
+    >>      Signed right shift
+    >>>     Unsigned right shift
+    &       Bitwise AND
+    ^       Bitwise exclusive OR
+    |       Bitwise inclusive OR
+
