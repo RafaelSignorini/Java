@@ -13,5 +13,6 @@ public class exe18 {
         } else {
             System.out.println("O ano não é bissexto.");
         }
+        scanner.close();
     }
 }
