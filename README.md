@@ -1,2 +1,2 @@
 # Java
-Java arquives saved her are for future projects, like aplications.
+Java arquives saved here are for future projects, like aplications.
