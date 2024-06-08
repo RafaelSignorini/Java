@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class exe19 {
     public static void main(String[] args) {
+        // Maior e menor número
         Scanner scanner = new Scanner(System.in);
         System.out.println("Insira o primeiro número: ");
         int num1 = scanner.nextInt();

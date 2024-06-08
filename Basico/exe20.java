@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class exe20 {
     public static void main(String[] args) {
+        // Aumento de salários
         Scanner scanner = new Scanner(System.in);
         System.out.println("Insira o valor de seu salário: ");
         float salario = scanner.nextFloat();
