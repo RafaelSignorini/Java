@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class exe18 {
     public static void main(String[] args) {
+        // Ano bissexto
         Scanner scanner = new Scanner(System.in);
         System.out.println("Insira um ano para saber se é bissexto ou normal: ");
         int year = scanner.nextInt();
