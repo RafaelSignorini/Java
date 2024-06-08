@@ -12,23 +12,30 @@ public class Jokenpo {
         do {
             System.out.println("[ 0 ] Pedra \n[ 1 ] Papel \n[ 2 ] Tesoura \n[ 3 ] Sair");
             u = scanner.nextInt();
-
-            if (u < 0 || u > 3) {
-                System.out.println("Valor inserido inválido, por favor tente novamente. ");
-                continue;
-            }
-
-            String usuario;
-            if (u == 0) {
-                usuario = "pedra";
-            } else if (u == 1) {
-                usuario = "papel";
-            } else {
-                usuario = "tesoura";
-            }
-
+            String usuario = "";
+            
             int pc = random.nextInt(3);
             String adversario;
+
+            switch(u) {
+                case 0:
+                    usuario = "pedra";
+                    break;
+                case 1:
+                    usuario = "papel";
+                    break;
+                case 2:
+                    usuario = "tesoura";
+                    break;
+                case 3:
+                    System.out.println("Jogo terminado. ");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Valor inserido inválido, por favor tente novamente. ");
+                    continue;
+            }
+
             if (pc == 0) {
                 adversario = "pedra";
             } else if (pc == 1) {
@@ -46,7 +53,6 @@ public class Jokenpo {
             }
             
         } while (u != 3);
-        System.out.println("Jogo terminado. ");
         scanner.close();
     }
 }
